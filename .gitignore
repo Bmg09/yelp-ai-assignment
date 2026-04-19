@@ -1,0 +1,44 @@
+# secrets
+.env
+.env.local
+.env.*.local
+
+# python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pycache/
+.cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# TS archive (deprecated — Python is the submission)
+archive/
+
+# DistilBERT weights (268MB — regenerate via scripts/distilbert_train.py)
+scripts/distilbert_yelp/checkpoint-*/
+scripts/distilbert_yelp/model.safetensors
+scripts/distilbert_yelp/optimizer.pt
+scripts/distilbert_yelp/*.pth
+scripts/distilbert_yelp/*.bin
+
+# node leftovers from TS era
+node_modules/
+bun.lock
+dist/
+out/
+*.tgz
+*.lcov
+coverage/
+logs/
+*.log
+.eslintcache
+*.tsbuildinfo

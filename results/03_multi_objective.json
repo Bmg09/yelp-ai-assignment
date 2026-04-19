@@ -1,0 +1,116 @@
+{
+  "classifier": "deepseek/deepseek-v3.2",
+  "judge": "anthropic/claude-haiku-4.5",
+  "classification": {
+    "n": 150,
+    "compliance": 1.0,
+    "accuracy": 0.66,
+    "macro_f1": 0.6540629039404224,
+    "mae": 0.3466666666666667,
+    "confusion": [
+      [
+        22,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        23,
+        4,
+        1,
+        0
+      ],
+      [
+        0,
+        6,
+        17,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        11,
+        17
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        26
+      ]
+    ]
+  },
+  "judge_aggregate": {
+    "faithfulness": {
+      "mean": 4.0,
+      "std": 0.8897565210026093
+    },
+    "politeness": {
+      "mean": 4.979591836734694,
+      "std": 0.14285714285714288
+    },
+    "actionability": {
+      "mean": 3.061224489795918,
+      "std": 1.0289185922062811
+    }
+  },
+  "n_classifier": 150,
+  "n_judge": 49,
+  "samples": [
+    {
+      "truth": 4,
+      "pred": 5,
+      "signal_type": "compliment",
+      "signal_text": "The reviewer was highly impressed by the quality and creativity of the vegan food, specifically praising the Squash Blossom Hush Puppies, noting they were so good they didn't want to share.",
+      "response": "Thank you so much for your wonderful review! We're delighted to hear you were impressed with your visit and that you enjoyed the Squash Blossom Hush Puppies so much. It's great to know our menu's variety and the vegan indicators were helpful. We hope you'll dream about dining with us again soon and perhaps try the OM burger next time!",
+      "judge": {
+        "faithfulness": 2,
+        "politeness": 5,
+        "actionability": 3,
+        "rationale": "The response invents specific menu items (Squash Blossom Hush Puppies, OM burger) and details not mentioned in the provided review excerpt, significantly misrepresenting the customer's actual comments. The tone is warm and professional, but the inaccuracies undermine credibility. The suggestion to return and try another item provides some actionability, though it's based on fabricated details."
+      }
+    },
+    {
+      "truth": 3,
+      "pred": 2,
+      "signal_type": "complaint",
+      "signal_text": "Payment friction: Customer experienced an 'awkward moment' when attempting to purchase but not having an Amex card, leading them to leave and buy elsewhere.",
+      "response": "Thank you for your feedback. We sincerely apologize for the awkward experience at checkout regarding our payment options. We are reviewing our accepted payment methods to better serve all our customers. In the meantime, we'd like to offer you a 15% discount on your next visit to give our selection another try. Please contact our store manager directly for details.",
+      "judge": null
+    },
+    {
+      "truth": 2,
+      "pred": 2,
+      "signal_type": "complaint",
+      "signal_text": "Complaint about pervasive uncleanliness and poor maintenance: 'It was dirty, musty, mildewed... The game floor was run-down, dirty, stinky (like someone crapped their pants-all the time).'",
+      "response": "Thank you for your detailed feedback regarding your stay in July. We sincerely apologize for the cleanliness and maintenance issues you experienced, particularly in your room and on the game floor. This is not the standard we strive to uphold. We are addressing these concerns with our housekeeping and facilities teams immediately. We have also noted your comments about the pool schedule, elevator waits, and shuttle service for review with the respective departments. We hope you might reconsider staying with us in the future so we can provide you with a significantly improved experience.",
+      "judge": null
+    },
+    {
+      "truth": 5,
+      "pred": 5,
+      "signal_type": "compliment",
+      "signal_text": "Compliment on genuine care and proactive follow-up: 'They are super friendly and genuinely care about your animals! ... they called to check in with me and see how everything was going.'",
+      "response": "Thank you so much for your wonderful review and for trusting us with both Lexi and Hula. We're delighted to hear that our team's friendliness and proactive follow-up made a positive difference, and we're especially glad we could help diagnose and manage Hula's thyroid condition. It's our pleasure to provide care that feels both supportive and reasonably priced. We'll be sure to share your kind words with Dr. White and the entire team. We look forward to seeing you all again soon.",
+      "judge": {
+        "faithfulness": 5,
+        "politeness": 5,
+        "actionability": 2,
+        "rationale": "The response accurately reflects all key points from the review (genuine care, follow-up calls, successful thyroid diagnosis, reasonable pricing, Dr. White's competence) and maintains a warm, professional tone throughout. However, it lacks concrete actionability\u2014there is no specific next step, offer, invitation, or proposed action beyond a generic 'look forward to seeing you again.'"
+      }
+    },
+    {
+      "truth": 2,
+      "pred": 2,
+      "signal_type": "complaint",
+      "signal_text": "Misleading name and tourist trap atmosphere. The customer expected a 'Grand Canyon Experience' but found only a large souvenir shop packed with trinkets, calling it a 'tourist trap' and noting the only relevant features were a fake rock facade and some birds.",
+      "response": "Thank you for your honest feedback. We're sorry to hear your visit didn't meet the expectations set by our name. We aim to provide a unique shopping experience with Southwestern-themed merchandise, but we understand your perspective that it felt more like a general souvenir shop. We will take your comments about the clarity of our offering to our marketing team for review. If you'd like to discuss this further, please feel free to contact our guest services directly.",
+      "judge": null
+    }
+  ]
+}

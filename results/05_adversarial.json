@@ -1,0 +1,145 @@
+{
+  "model": "deepseek/deepseek-v3.2",
+  "baseline": {
+    "clean": {
+      "n": 20,
+      "accuracy": 0.6,
+      "compliance": 1.0
+    },
+    "competitor": {
+      "n": 20,
+      "accuracy": 0.7,
+      "compliance": 1.0
+    },
+    "emoji": {
+      "n": 20,
+      "accuracy": 0.65,
+      "compliance": 1.0
+    },
+    "irrelevant_padding": {
+      "n": 20,
+      "accuracy": 0.65,
+      "compliance": 1.0
+    },
+    "mixed_language": {
+      "n": 20,
+      "accuracy": 0.6,
+      "compliance": 1.0
+    },
+    "negation": {
+      "n": 20,
+      "accuracy": 0.75,
+      "compliance": 1.0
+    },
+    "sarcasm": {
+      "n": 20,
+      "accuracy": 0.55,
+      "compliance": 1.0
+    },
+    "typo": {
+      "n": 20,
+      "accuracy": 0.7,
+      "compliance": 1.0
+    }
+  },
+  "self_consistency": {
+    "clean": {
+      "n": 20,
+      "accuracy": 0.6,
+      "compliance": 1.0
+    },
+    "competitor": {
+      "n": 20,
+      "accuracy": 0.7,
+      "compliance": 1.0
+    },
+    "emoji": {
+      "n": 20,
+      "accuracy": 0.6,
+      "compliance": 1.0
+    },
+    "irrelevant_padding": {
+      "n": 20,
+      "accuracy": 0.6,
+      "compliance": 1.0
+    },
+    "mixed_language": {
+      "n": 20,
+      "accuracy": 0.6,
+      "compliance": 1.0
+    },
+    "negation": {
+      "n": 20,
+      "accuracy": 0.7,
+      "compliance": 1.0
+    },
+    "sarcasm": {
+      "n": 20,
+      "accuracy": 0.55,
+      "compliance": 1.0
+    },
+    "typo": {
+      "n": 20,
+      "accuracy": 0.7,
+      "compliance": 1.0
+    }
+  },
+  "per_attack": [
+    {
+      "attack": "clean",
+      "n": 20,
+      "baseline_acc": 60.0,
+      "self_consistency_acc": 60.0,
+      "delta_pp": 0.0
+    },
+    {
+      "attack": "competitor",
+      "n": 20,
+      "baseline_acc": 70.0,
+      "self_consistency_acc": 70.0,
+      "delta_pp": 0.0
+    },
+    {
+      "attack": "emoji",
+      "n": 20,
+      "baseline_acc": 65.0,
+      "self_consistency_acc": 60.0,
+      "delta_pp": -5.0
+    },
+    {
+      "attack": "irrelevant_padding",
+      "n": 20,
+      "baseline_acc": 65.0,
+      "self_consistency_acc": 60.0,
+      "delta_pp": -5.0
+    },
+    {
+      "attack": "mixed_language",
+      "n": 20,
+      "baseline_acc": 60.0,
+      "self_consistency_acc": 60.0,
+      "delta_pp": 0.0
+    },
+    {
+      "attack": "negation",
+      "n": 20,
+      "baseline_acc": 75.0,
+      "self_consistency_acc": 70.0,
+      "delta_pp": -5.0
+    },
+    {
+      "attack": "sarcasm",
+      "n": 20,
+      "baseline_acc": 55.0,
+      "self_consistency_acc": 55.0,
+      "delta_pp": 0.0
+    },
+    {
+      "attack": "typo",
+      "n": 20,
+      "baseline_acc": 70.0,
+      "self_consistency_acc": 70.0,
+      "delta_pp": 0.0
+    }
+  ]
+}
