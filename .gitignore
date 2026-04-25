@@ -29,6 +29,9 @@ scripts/distilbert_yelp/model.safetensors
 scripts/distilbert_yelp/optimizer.pt
 scripts/distilbert_yelp/*.pth
 scripts/distilbert_yelp/*.bin
+scripts/distilbert_yelp_10k/
+scripts/distilbert_yelp_100k/
+scripts/distilbert_yelp_500k/
 
 # node leftovers from TS era
 node_modules/
